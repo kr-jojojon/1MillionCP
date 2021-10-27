@@ -211,7 +211,8 @@ h3{
 
 @media(max-width:599px){
 	#header-box{
-		display: none;
+		margin-right: unset;
+		margin-left: auto;
 	}
 	#game-embedded{
 		display: none;
