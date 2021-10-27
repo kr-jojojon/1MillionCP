@@ -132,7 +132,7 @@ h3{
 	}
 	#header-box  {margin-left: unset;}
 
-	#header-box * {display: none;}
+	#header-box > div {display: none;}
 
 	#header-box > div.menu-btn {display: flex;}
 
@@ -159,7 +159,7 @@ h3{
 	transition: all .5s ease-in-out;
 	background: #ee5b54;
 	border-radius: 50px;
-	margin: 10px 0 0 10px;
+	margin: 10px 10px 0 10px;
 
 	}
 
@@ -210,10 +210,13 @@ h3{
 }
 
 @media(max-width:599px){
-	#header-box{
+	#header-box {
 		margin-right: unset;
 		margin-left: auto;
 	}
+
+	#header-box > div.menu-btn.open {margin-left: auto;}
+
 	#game-embedded{
 		display: none;
 	}
