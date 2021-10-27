@@ -26,6 +26,7 @@ header{
 #header-box>div{
 	display: table-cell;
 }
+
 #logo{
 	padding-right: 50px;
 }
@@ -114,7 +115,7 @@ h3{
 }
 
 @media(min-width:1024px){
-	#touch-box{
+	.menu-btn{
 		display: none;
 	}
 	
@@ -122,11 +123,88 @@ h3{
 
 
 @media(max-width:1023px){
-	#header-box{
-		display: none;
+	header {
+		background-color: transparent;
 	}
+
 	#game-embedded{
 		display: none;
+	}
+	#header-box  {margin-left: unset;}
+
+	#header-box * {display: none;}
+
+	#header-box > div.menu-btn {display: flex;}
+
+	#header-box > div.menu-btn * {display: initial;}
+
+	#header-box.open {
+		justify-items: left;
+		max-width: 175px;
+		display: flex;
+		flex-direction: column;
+		background: #ee5b54;
+	}
+
+	#header-box.open * {display: initial;}
+
+	.menu-btn {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+	transition: all .5s ease-in-out;
+	background: #ee5b54;
+	border-radius: 50px;
+	margin: 10px 0 0 10px;
+
+	}
+
+	.menu-btn__burger {
+		width: 50px;
+		height: 6px;
+		background: #fff;
+		border-radius: 5px;
+		box-shadow: 0 2px 5px rgba(255,101,47,.2);
+		transition: all .5s ease-in-out;
+	}
+
+	.menu-btn__burger::before,
+	.menu-btn__burger::after {
+		content: '';
+		position: absolute;
+		width: 50px;
+		height: 6px;
+		background: #fff;
+		border-radius: 5px;
+		box-shadow: 0 2px 5px rgba(255,101,47,.2);
+		transition: all .5s ease-in-out;
+	}
+
+	.menu-btn__burger::before {
+		transform: translateY(-16px);
+	}
+
+	.menu-btn__burger::after {
+		transform: translateY(16px);
+	}
+
+	/* ANIMATION  */
+	.menu-btn.open .menu-btn__burger {
+		transform: translateX(-50px);
+		background: transparent;
+		box-shadow: none;
+	}
+
+	.menu-btn.open .menu-btn__burger::before {
+		transform: rotate(45deg) translate(35px, -35px);
+	}
+
+	.menu-btn.open .menu-btn__burger::after {
+		transform: rotate(-45deg) translate(35px, 35px);
 	}
 
 }
@@ -142,4 +220,3 @@ h3{
 		width:90%;
 	}
 }
-
