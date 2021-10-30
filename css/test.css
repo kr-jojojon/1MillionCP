@@ -4,6 +4,7 @@ body{
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
+	font-family: 'Kosugi Maru', sans-serif;
 }
 .contents{
 	max-width: 1232px;
@@ -14,7 +15,8 @@ header{
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(255, 255, 255, 0.9);
+	z-index: 100000;
 }
 #header-box{
 	display: table;
@@ -26,7 +28,6 @@ header{
 #header-box>div{
 	display: table-cell;
 }
-
 #logo{
 	padding-right: 50px;
 }
@@ -50,13 +51,22 @@ header{
 	height: 50px;
 	line-height: 46px;
 	margin-right: 2px;
+	font-size: 25px;
 }
- 
 #nav li a {
 	text-decoration: none;
 	color: #fff;
 	font-weight: bold;
 	padding: 20px;
+	color: #3131c5;
+}
+#nav li a:hover{
+	color: #ffffff;
+	background-color: #3131c5;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all  0.3s ease;
 }
 #btn-box {
 	vertical-align: top;
@@ -66,7 +76,6 @@ header{
 }
 #main{
 	max-width: 1232px;
-	height: 7000px;
 	margin-top: 56px;
 	padding-top: 50px;
 }
@@ -103,41 +112,163 @@ h2{
  
 .contents-box {
 	width: 368px;
-	padding-bottom: 50px;
+	padding-bottom: 80px;
+	margin: 0 20px;
 }
-
-h3 {
+.fa-frame {
+	display: inline-block;
+	position: relative;
+}
+.fa-frame:after {
+	position: absolute;
+	display: block;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	transform: rotate(3deg); 
+	background: #ccc;
+	z-index: -1;
+}
+.contents-name {
+	font-size: 25px;
+	border-bottom: 1px solid #f0bdc4;
+	color: #333;
+	padding: 20px 10px 10px 70px;
+	position: relative;
+}
+.contents-name:before {
+	background-color: #ff6a88;
+	border-radius: 50%;
+	content: '';
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: 10px;
+	width: 25px;
+	height: 25px;
+	box-shadow: 25px 10px 0px #ff6a88,
+			 3px 25px 0px #ff6a88;
+}
+.contents-name:after {
+	border: 4px solid #fff;
+	border-radius: 50%;
+	content: '';
+	display: block;
+	position: absolute;
+	top: 30px;
+	left: 22px;
+	width: 20px;
+	height: 20px;
+}
+#episode{
+	background-color: rgba(255, 255, 255, 0.4);
+	padding-top: 40px !important;
+	margin-top: 90px;
+}
+#episode .contents-box{
+	background-color: #FBF4E6;
+	padding: 30px 20px;
+	margin: 0 20px 80px;
+	border-radius: 20px;
+}
+#episode .contents-box>div{
+	text-align: left;
+	font-size: 14px;
+	line-height: 21px;
+}
+.normal-box {
+	height: 200px;
+}
+.grad-wrap {
+	position: relative;
+}
+.grad-wrap + .grad-wrap {
+	margin-top: 40px;
+}
+.grad-trigger {
+	color: #777;
+	position: absolute;
+	top: 160px;
+	right: 0px;
+	border: 1px solid #777;
+	padding: 3px 5px;
+	z-index: 100;
+}
+.grad-item {
+	position: relative;
+	overflow: hidden;
+}
+.grad-item.is-hide {
+	height: 200px;
+}
+.grad-item p + p {
+	margin-top: 1em;
+}
+.grad-item::before {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: "";
+	width: 100%;
+	height: 100px;
+	background: 
+		-webkit-linear-gradient(top, rgba(251,244,230,0) 0%, rgba(251,244,230,0.9) 50%,
+		rgba(251,244,230,0.9) 50%,
+		#FBF4E6 100%);
+	background: 
+		linear-gradient(top, rgba(251,244,230,0) 0%, rgba(251,244,230,0.9) 50%,
+		rgba(251,244,230,0.9) 50%,
+		#FBF4E6 100%);
+}
+.grad-trigger.is-show + .grad-item::before {
+	display: none;
+}
+#planner{
+	padding-top: 20px;
+}
+.staff-box{
+	width: 400px;
+	margin: 0 auto;
+}
+h3{
+	font-size: 50px;
+	padding-top: 60px;
+}
+h4{
 	font-size: 40px;
-	padding-top: 30px;
+	padding-top: 110px;	
 }
 
-footer {
+h5{
+	padding: 40px 0 0 60px;
+	font-size: 14px;
+}
+#staff-wrapper{
+	display: table;
+	max-width: 800px;
+	margin: 0 auto;
+}
+#staff-wrapper>div{
+	display: table-cell;
+}
+.staff-box p{
+	width: 350px;
+	margin: 0 auto;
+}
+.staff-box .contents-name{
+	padding-top: 5px;
+}
+#st{
+	font-size:90%;
+}
+
+
+
+#footer-box{
 	font-size: 20px;
-	padding: 5px;
+	padding-top: 100px;
 }
-
-footer > div.center {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-    margin: 0 auto;
-}
-
-footer a {
-	display: flex;
-	flex-wrap: nowrap;
-	color: -webkit-link;
-    text-decoration: underline;
-    margin-right: 20px;
-}
-
-footer img {
-	max-height: 20px;
-	width: auto;
-	margin: auto 5px auto auto;
-}
-
-
-
-
-
