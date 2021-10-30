@@ -134,7 +134,7 @@ footer a {
 footer img {
 	max-height: 20px;
 	width: auto;
-	margin-right: 5px;
+	margin: auto 5px auto auto;
 }
 
 
