@@ -2,20 +2,23 @@
 	.menu-btn{
 		display: none;
 		}
+	.mobile{
+		display: none;
+		}
 	}
 
 @media(max-width:1023px){
 	html {
 		width: fit-content;
 	}
+	.no-mobile{
+		display: none;
+	}
 
 	header {
 		background-color: transparent;
 	}
 
-	#game-embedded{
-		display: none;
-	}
 	#header-box  {
 		margin-left: unset; 
 		max-width:  175px;
@@ -27,6 +30,10 @@
 
 	#header-box.open div {display: initial; opacity: 100;}
 
+	#header-box.open #logo{
+		display: none;
+	}	
+	
 	#header-box > div.menu-btn {display: flex; opacity: 100;}
 
 	#header-box > div.menu-btn * {display: initial; opacity: 100;}
@@ -34,10 +41,10 @@
 	#header-box.open {
 		height: auto;
 		justify-items: left;
-		max-width: 175px;
+		max-width: 185px;
 		display: flex;
 		flex-direction: column;
-		background: #ee5b54;
+		background-color: rgba(0, 0, 0, 0.9);
 	}
 
 	
@@ -50,7 +57,7 @@
 		height: 100px;
 		cursor: pointer;
 		transition: all .5s ease-in-out;
-		background: #ee5b54;
+		background-color: rgba(0, 0, 0, 0.1);
 		border-radius: 50px;
 		margin: 10px 10px 0 10px;
 		opacity: 100;
@@ -101,10 +108,26 @@
 	.menu-btn.open .menu-btn__burger::after {
 		transform: rotate(-45deg) translate(35px, 35px);
 	}
+	#nav{
+		padding-top: 50px;
+	}
+	#nav li {
+		text-align: left;
+		padding-left: 10px;
+		height: 100px;
+		font-size: 30px;
+
+	}
+	#nav li a{
+
+	}
+	#nav li a:hover{
+		background-color:rgba(0,0,0,0);
+	}
 
 	#video {
 		width: 600px;
-		height: 338px;
+		height: 530px;
 		margin: 0 auto;
 	}
 
@@ -112,7 +135,14 @@
 		width: 100%;
 		height: 100%;
 	}
-
+	#btn-box img{
+		width: auto;
+		padding-left: 30px;
+		padding-bottom: 30px;
+	}
+	#staff-wrapper>div{
+		display: block;
+	}
 
 }
 
@@ -123,17 +153,15 @@
 	}
 
 	#header-box > div.menu-btn.open {margin-left: auto;}
-
-	#game-embedded{
+	#logo{
 		display: none;
 	}
 	img{
 		width:90%;
 	}
-
 	#video {
 		width: 375px;
-		height: 211px;
+		height: 411px;
 	}
 }
 
