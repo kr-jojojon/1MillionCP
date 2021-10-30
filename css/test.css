@@ -265,9 +265,12 @@ h5{
 #st{
 	font-size:90%;
 }
-
-
-
+#staff .contents-name:before {
+	top: 0px;
+}
+#staff .contents-name:after {
+	top: 14px;
+}
 #footer-box{
 	font-size: 20px;
 	padding-top: 100px;
