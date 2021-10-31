@@ -24,7 +24,7 @@ $(function(){
 			}
 		});
 
-		var folder = "/img/fanart/";
+		var folder = "fanart/";
 
 		$.ajax({url: folder, success: function (data) {
 			$(data).find("a").attr("href", function (i, val) {
