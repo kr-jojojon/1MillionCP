@@ -1,3 +1,21 @@
+const FANART = `
+sss_mspink_y.jpg
+sss_TE___jin.jpg
+sss_aobushi.jpg
+2i_piyokinoko.png
+1i_piyokinoko.jpg
+C4_Tatsuroti.png
+2b_BlueOverflag.jpg
+sss_Tempura Person.jpg
+2k_tokitosonem.jpg
+1s_LeslieEmpty.png
+1s_LeslieEmpty.jpg
+2s_Soab.png
+2s_ykmn_illust.jpg
+2a_ArKhey.jpg
+`.split('\n')
+
+
 $(function(){
 	$('a[href^="#"]').click(function(){
 		var adjust = 0;
@@ -9,53 +27,49 @@ $(function(){
 		return false;
 		});
 
-		const menuBtn = document.querySelector('.menu-btn');
-		const headercontents_box = document.querySelector('#header-contents_box');
-		let menuOpen = false;
-		menuBtn.addEventListener('click', () => {
-			if(!menuOpen) {
-				menuBtn.classList.add('open');
-				headercontents_box.classList.add('open');
-				menuOpen = true;
-			} else {
-				menuBtn.classList.remove('open');
-				headercontents_box.classList.remove('open');
-				menuOpen = false;
-			}
-		});
-
-		var folder = "fanart/";
-
-		$.ajax({url: folder, success: function (data) {
-			$(data).find("a").attr("href", function (i, val) {
-				if( val.match(/\.(jpe?g|png|gif)$/) ) {
-					name = val.split('_').slice(1).join('_').split('.')[0].replace('%20', ' ')
-					console.log(val)
-					contents_warp = document.getElementsByClassName("contents-warp")[0];
-					contents_box = document.createElement("div");
-					contents_box.classList.add("contents-box");
-					fa_frame = document.createElement("div");
-					fa_frame.classList.add("fa-frame");
-					contents_name = document.createElement("p");
-					text = document.createTextNode(name);
-					contents_name.classList.add("contents-name");
-					anchor = document.createElement("a");
-					anchor.setAttribute("href", folder + val);
-					anchor.setAttribute("data-lightbox", "image-1");
-					anchor.setAttribute("data-title", name);
-					anchor.setAttribute("data-alt", "fanart sent by " + name);
-					image = document.createElement("img");
-					image.setAttribute("src", folder + val);
-					image.setAttribute("alt", name);
-
-					contents_warp.appendChild(contents_box);
-					contents_box.appendChild(fa_frame);
-					contents_box.appendChild(contents_name);
-					fa_frame.appendChild(anchor);
-					contents_name.appendChild(text);
-					anchor.appendChild(image);
-				};
-			});
+	const menuBtn = document.querySelector('.menu-btn');
+	const headercontents_box = document.querySelector('#header-contents_box');
+	let menuOpen = false;
+	menuBtn.addEventListener('click', () => {
+		if(!menuOpen) {
+			menuBtn.classList.add('open');
+			headercontents_box.classList.add('open');
+			menuOpen = true;
+		} else {
+			menuBtn.classList.remove('open');
+			headercontents_box.classList.remove('open');
+			menuOpen = false;
 		}
 	});
+
+	for (let i = 0; i < FANART.length; i++) {
+		if (FANART[i] != ""){
+	  		name = FANART[i].split('_').slice(1).join('_').split('.')[0].replace('%20', ' ')
+	  		url = "fanart/" + FANART[i]
+			console.log("name: " + name + "url: " + url)
+			contents_warp = document.getElementsByClassName("contents-warp")[0];
+			contents_box = document.createElement("div");
+			contents_box.classList.add("contents-box");
+			fa_frame = document.createElement("div");
+			fa_frame.classList.add("fa-frame");
+			contents_name = document.createElement("p");
+			text = document.createTextNode(name);
+			contents_name.classList.add("contents-name");
+			anchor = document.createElement("a");
+			anchor.setAttribute("href", url);
+			anchor.setAttribute("data-lightbox", "image-1");
+			anchor.setAttribute("data-title", name);
+			anchor.setAttribute("data-alt", "fanart sent by " + name);
+			image = document.createElement("img");
+			image.setAttribute("src", url);
+			image.setAttribute("alt", name);
+
+			contents_warp.appendChild(contents_box);
+			contents_box.appendChild(fa_frame);
+			contents_box.appendChild(contents_name);
+			fa_frame.appendChild(anchor);
+			contents_name.appendChild(text);
+			anchor.appendChild(image);
+	  	}
+	}
 });
