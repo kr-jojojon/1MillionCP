@@ -24,13 +24,13 @@ $(function(){
 			}
 		});
 
-		var folder = "img/fanart/";
+		var folder = "/img/fanart/";
 
 		$.ajax({url: folder, success: function (data) {
 			$(data).find("a").attr("href", function (i, val) {
 				if( val.match(/\.(jpe?g|png|gif)$/) ) {
 					name = val.split('_').slice(1).join('_').split('.')[0].replace('%20', ' ')
-
+					console.log(val)
 					contents_warp = document.getElementsByClassName("contents-warp")[0];
 					contents_box = document.createElement("div");
 					contents_box.classList.add("contents-box");
