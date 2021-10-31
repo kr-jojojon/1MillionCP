@@ -137,6 +137,13 @@ h2{
 	background: #ccc;
 	z-index: -1;
 }
+
+.fa-frame img {
+	max-width: 368px;
+	max-height: 207px;
+	background-color: white;
+}
+
 .contents-name {
 	font-size: 25px;
 	border-bottom: 1px solid #f0bdc4;
