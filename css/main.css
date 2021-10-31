@@ -82,8 +82,7 @@ header{
 }
 #main{
 	max-width: 1232px;
-	margin-top: 56px;
-	padding-top: 50px;
+	padding-top: 105px;
 }
 #main>div{
 	padding-top: 130px;	
@@ -279,9 +278,9 @@ h5{
 }
 
 #footer-box {
-	max-width: 100%;
+	max-width: 1232px;
 	font-size: 20px;
-	margin: 100px 0 24px 0;
+	margin: 100px 70px 24px 70px;
 }
 
 #footer-box a {margin: 0 34px;}
