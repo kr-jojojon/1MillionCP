@@ -81,7 +81,7 @@ function switchLocalisation (element) {
 
 	function setLocalisation (from, to) {
 		localisationDisplayStyle(from, 'none')
-		localisationDisplayStyle(to, 'unset')
+		localisationDisplayStyle(to, 'block;')
 		document.querySelector("[localisation]").setAttribute("localisation", to);
 	}
 
