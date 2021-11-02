@@ -311,3 +311,10 @@ h5{
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #f490ce;
 }
+
+[lang] {
+  display: none;
+}
+[lang=ja] {
+  display: unset;
+}
