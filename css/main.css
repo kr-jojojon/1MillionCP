@@ -139,8 +139,8 @@ h2{
 }
 
 .fa-frame img {
-	max-width: 368px;
-	max-height: 207px;
+	max-width: 330px;
+	max-height: 200px;
 	background-color: white;
 }
 
@@ -148,7 +148,7 @@ h2{
 	font-size: 25px;
 	border-bottom: 1px solid #f0bdc4;
 	color: #333;
-	padding: 20px 10px 10px 70px;
+	padding: 20px 0 10px 0;
 	position: relative;
 }
 .contents-name:before {

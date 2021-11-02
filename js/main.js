@@ -46,6 +46,7 @@ $(function(){
 			anchor.setAttribute("data-alt", "fanart sent by " + name);
 			let image = document.createElement("img");
 			image.setAttribute("src", url);
+			image.setAttribute("loading", "lazy");
 			image.setAttribute("alt", name);
 
 			contentsWarp.appendChild(contentsBox);
