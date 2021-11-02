@@ -28,16 +28,16 @@ $(function(){
 		});
 
 	const menuBtn = document.querySelector('.menu-btn');
-	const headercontents_box = document.querySelector('#header-contents_box');
+	const headerBox = document.querySelector('#header-box');
 	let menuOpen = false;
 	menuBtn.addEventListener('click', () => {
 		if(!menuOpen) {
 			menuBtn.classList.add('open');
-			headercontents_box.classList.add('open');
+			headerBox.classList.add('open');
 			menuOpen = true;
 		} else {
 			menuBtn.classList.remove('open');
-			headercontents_box.classList.remove('open');
+			headerBox.classList.remove('open');
 			menuOpen = false;
 		}
 	});
@@ -47,14 +47,14 @@ $(function(){
 	  		name = FANART[i].split('_').slice(1).join('_').split('.')[0].replace('%20', ' ')
 	  		url = "fanart/" + FANART[i]
 			console.log("name: " + name + "url: " + url)
-			contents_warp = document.getElementsByClassName("contents-warp")[0];
-			contents_box = document.createElement("div");
-			contents_box.classList.add("contents-box");
-			fa_frame = document.createElement("div");
-			fa_frame.classList.add("fa-frame");
-			contents_name = document.createElement("p");
+			contentsWarp = document.getElementsByClassName("contents-warp")[0];
+			contentsBox = document.createElement("div");
+			contentsBox.classList.add("contents-box");
+			faFrame = document.createElement("div");
+			faFrame.classList.add("fa-frame");
+			contentsName = document.createElement("p");
 			text = document.createTextNode(name);
-			contents_name.classList.add("contents-name");
+			contentsName.classList.add("contents-name");
 			anchor = document.createElement("a");
 			anchor.setAttribute("href", url);
 			anchor.setAttribute("data-lightbox", "image-1");
@@ -64,11 +64,11 @@ $(function(){
 			image.setAttribute("src", url);
 			image.setAttribute("alt", name);
 
-			contents_warp.appendChild(contents_box);
-			contents_box.appendChild(fa_frame);
-			contents_box.appendChild(contents_name);
-			fa_frame.appendChild(anchor);
-			contents_name.appendChild(text);
+			contentsWarp.appendChild(contentsBox);
+			contentsBox.appendChild(faFrame);
+			contentsBox.appendChild(contentsName);
+			faFrame.appendChild(anchor);
+			contentsName.appendChild(text);
 			anchor.appendChild(image);
 	  	}
 	}
