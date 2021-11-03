@@ -158,6 +158,7 @@ h2{
 	color: #333;
 	padding: 20px 0 10px 0;
 	position: relative;
+	text-align: center;
 }
 .contents-name:before {
 	background-color: #ff6a88;
