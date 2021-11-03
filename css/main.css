@@ -146,6 +146,7 @@ h2{
 }
 
 .fa-frame img {
+	width: auto;
 	max-width: 330px;
 	max-height: 200px;
 	background-color: white;
