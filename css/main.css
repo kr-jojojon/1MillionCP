@@ -70,9 +70,16 @@ header{
 }
 #btn-box {
 	vertical-align: top;
+	padding-top: 12px;
 }
-#btn-box img{
-	margin-top: 25px;
+#flag {
+	border: 1px solid lightgrey;
+}
+[lang] {
+  display: none;
+}
+[lang=ja] {
+  display: block;
 }
 #video{
 	padding-top: 50px!important;
@@ -312,9 +319,3 @@ h5{
 	background-color: #f490ce;
 }
 
-[lang] {
-  display: none;
-}
-[lang=ja] {
-  display: unset;
-}

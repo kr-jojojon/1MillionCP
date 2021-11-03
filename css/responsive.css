@@ -139,6 +139,7 @@
 		width: auto;
 		padding-left: 30px;
 		padding-bottom: 30px;
+		border: unset;
 	}
 	#staff-wrapper>div{
 		display: block;

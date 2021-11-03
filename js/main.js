@@ -81,8 +81,10 @@ function switchLocalisation (element) {
 
 	function setLocalisation (from, to) {
 		localisationDisplayStyle(from, 'none')
-		localisationDisplayStyle(to, 'block;')
+		localisationDisplayStyle(to, 'block')
 		document.querySelector("[localisation]").setAttribute("localisation", to);
+		document.querySelector("#flag").setAttribute("src", "img/" + {"ja": "en", "en": "ja"}[to] + "-flag.webp");
+		document.querySelector("#flag").setAttribute("alt", {"ja": "日本語", "en": "english language"}[to]);
 	}
 
 	if (element.attributes["localisation"].value == "en") {setLocalisation("en", "ja")}
