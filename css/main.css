@@ -5,6 +5,7 @@ body{
 	background-size: cover;
 	background-position: center;
 	font-family: 'Kosugi Maru', sans-serif;
+	color: #1E1E1E;
 }
 .contents{
 	max-width: 1232px;
@@ -70,9 +71,16 @@ header{
 }
 #btn-box {
 	vertical-align: top;
+	padding-top: 12px;
 }
-#btn-box img{
-	margin-top: 25px;
+#flag {
+	border: 1px solid lightgrey;
+}
+[lang] {
+  display: none;
+}
+[lang=ja] {
+  display: block;
 }
 #video{
 	padding-top: 50px!important;
@@ -100,6 +108,7 @@ h2{
 	width: 800px;
 	height: 600px;
 	margin: 0 auto;
+	margin-bottom: 0px!important;
 	background-color: #000000;
 }
 #gamen{
@@ -139,17 +148,19 @@ h2{
 }
 
 .fa-frame img {
+	width: auto;
 	max-width: 330px;
 	max-height: 200px;
 	background-color: white;
 }
 
 .contents-name {
-	font-size: 25px;
+	font-size: 16px;
 	border-bottom: 1px solid #f0bdc4;
 	color: #333;
 	padding: 20px 0 10px 0;
 	position: relative;
+	text-align: center;
 }
 .contents-name:before {
 	background-color: #ff6a88;
@@ -158,7 +169,7 @@ h2{
 	display: block;
 	position: absolute;
 	top: 15px;
-	left: 10px;
+	left: 0px;
 	width: 25px;
 	height: 25px;
 	box-shadow: 25px 10px 0px #ff6a88,
@@ -170,8 +181,8 @@ h2{
 	content: '';
 	display: block;
 	position: absolute;
-	top: 30px;
-	left: 22px;
+	top: 25px;
+	left: 8px;
 	width: 20px;
 	height: 20px;
 }
@@ -247,16 +258,16 @@ h2{
 	margin: 0 auto;
 }
 h3{
-	font-size: 50px;
+	font-size: 40px;
 	padding-top: 60px;
 }
 h4{
-	font-size: 40px;
-	padding-top: 110px;	
+	font-size: 30px;
+	padding-top: 30px;	
 }
 
 h5{
-	padding: 40px 0 0 60px;
+	padding: 40px 0 0 0px;
 	font-size: 14px;
 }
 #staff-wrapper{
@@ -272,7 +283,7 @@ h5{
 	margin: 0 auto;
 }
 .staff-box .contents-name{
-	padding-top: 5px;
+	padding-top: 10px;
 }
 #st{
 	font-size:90%;
@@ -281,7 +292,7 @@ h5{
 	top: 0px;
 }
 #staff .contents-name:after {
-	top: 14px;
+	top: 10px;
 }
 
 #footer-box {
