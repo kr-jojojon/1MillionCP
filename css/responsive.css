@@ -116,13 +116,10 @@
 	.menu-btn.open .menu-btn__burger::after {
 		transform: rotate(-45deg) translate(35px, 35px);
 	}
-	#nav{
-		padding-top: 50px;
-	}
 	#nav li {
 		text-align: left;
 		padding-left: 10px;
-		height: 90px;
+		height: 80px;
 		font-size: 30px;
 
 	}
