@@ -34,7 +34,7 @@ $(function(){
 	$.getJSON("data/display_names.json", function(displayNames){
 		for (filename in displayNames) {
 	  		let name = displayNames[filename]
-	  		let url = "fanart/" + filename .webp
+	  		let url = "fanart/" + filename + ".webp"
 
 			let contentsWarp = document.getElementsByClassName("contents-warp")[0];
 			let contentsBox = document.createElement("div");
