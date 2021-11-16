@@ -74,10 +74,7 @@ header{
 }
 #btn-box {
 	vertical-align: top;
-	padding-top: 17px;
-}
-#flag {
-	border: 1px solid lightgrey;
+	padding-top: 8px;
 }
 [lang] {
   display: none;
