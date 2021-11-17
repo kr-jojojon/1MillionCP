@@ -34,7 +34,9 @@ $(function(){
 	$.getJSON("data/display_names.json", function(displayNames){
 		for (filename in displayNames) {
 	  		let name = displayNames[filename]
-	  		let url = "fanart/" + filename + ".webp"
+	  		let origin = "fanart/" + filename + ".webp"
+	  		let thumb = "fanart/thumbnails/" + filename + ".webp"
+
 
 			let contentsWarp = document.getElementsByClassName("contents-warp")[0];
 			let contentsBox = document.createElement("div");
@@ -49,13 +51,13 @@ $(function(){
 			let text = document.createTextNode(name);
 			
 			let anchor = document.createElement("a");
-			anchor.setAttribute("href", url);
+			anchor.setAttribute("href", origin);
 			anchor.setAttribute("data-lightbox", "image-1");
 			anchor.setAttribute("data-title", name);
 			anchor.setAttribute("data-alt", "fanart sent by " + name);
 			
 			let image = document.createElement("img");
-			image.setAttribute("src", url);
+			image.setAttribute("src", thumb);
 			image.setAttribute("width", "330px");
 			image.setAttribute("height", "200px");
 			image.setAttribute("loading", "lazy");
