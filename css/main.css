@@ -1,4 +1,4 @@
-body{
+#body-wrapper{
 	background-image: url(../img/main-03.webp);
 	min-height: 100vh;
 	background-attachment: fixed;
