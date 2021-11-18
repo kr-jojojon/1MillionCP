@@ -65,7 +65,7 @@
 	#header-box.open {
 		height: auto;
 		justify-items: left;
-		max-width: 185px;
+		max-width: 165px;
 		display: flex;
 		flex-direction: column;
 		background-color: rgba(0, 0, 0, 0.9);
