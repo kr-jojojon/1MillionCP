@@ -7,7 +7,14 @@
     font-family: 'Kosugi Maru', sans-serif;
     color: #1E1E1E;
 }
-
+#uos{
+    position: relative;
+}
+#uos>img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
 .contents {
     max-width: 1232px;
     margin: 0 auto;
