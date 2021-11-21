@@ -364,7 +364,8 @@ h5 {
 #footer-box {
     max-width: 1232px;
     font-size: 20px;
-    margin: 100px auto 24px auto;
+    padding-bottom: 30px;
+    margin: 100px auto 0px auto;
 }
 
 #footer-box a {
