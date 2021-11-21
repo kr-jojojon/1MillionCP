@@ -40,6 +40,7 @@
 	#uos>img{
 		width: 100px;
 		top: 0px;
+		left: 100px;
 	}
 	.no-mobile{
 		display: none;
