@@ -39,6 +39,7 @@
 	}
 	#uos>img{
 		width: 100px;
+		top: 0px;
 	}
 	.no-mobile{
 		display: none;
