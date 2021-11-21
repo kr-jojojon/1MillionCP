@@ -168,6 +168,9 @@
 	.game-sp, .no-mobile{
 			display: none;
 		}
+	#game-embedded{
+		width: auto;
+	}
 	.game-guidance{
 			font-size: 20px
 	}
