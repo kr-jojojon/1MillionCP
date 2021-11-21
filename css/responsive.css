@@ -37,6 +37,10 @@
 		background-image:url(../img/main-03.webp);
 		background-size:cover;
 	}
+	#uos>img{
+		width: 100px;
+		left: 100px;
+	}
 	.no-mobile{
 		display: none;
 	}
@@ -145,7 +149,9 @@
 	#nav li a:hover{
 		background-color:rgba(0,0,0,0);
 	}
-
+	#main{
+		padding-top: 0;
+	}
 	#video {
 		width: 600px;
 		height: 530px;
