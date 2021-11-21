@@ -184,7 +184,7 @@
 	}
 	.contents-box {
 		width: 330px;
-		
+		margin: 0px;
 	}
 	#episode .contents-box {
 		padding: 30px 10px;
