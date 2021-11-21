@@ -12,8 +12,8 @@
     z-index: 100010;
 }
 #uos>img{
-    position: fixed;
-    top: 103px;
+    position: absolute;
+    top: 53px;
     left: 13px;
 }
 .contents {
