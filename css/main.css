@@ -12,7 +12,7 @@
     z-index: 100010;
 }
 #uos>img{
-    position: absolute;
+    position: fixed;
     top: 3px;
     left: 13px;
 }
