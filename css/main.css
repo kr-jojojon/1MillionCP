@@ -9,12 +9,12 @@
 }
 #uos{
     position: relative;
+    z-index: 10;
 }
 #uos>img{
     position: absolute;
     top: 0px;
     left: 0px;
-    z-index: 10;
 }
 .contents {
     max-width: 1232px;
