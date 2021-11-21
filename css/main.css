@@ -9,7 +9,7 @@
 }
 #uos{
     position: relative;
-    z-index: 10;
+    z-index: 100010;
 }
 #uos>img{
     position: absolute;
