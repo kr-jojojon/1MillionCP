@@ -5,7 +5,7 @@
 	.mobile{
 		display: none;
 	}
-	#video>div iframe{
+	#video iframe{
 		width: 800px;
 		height: 449px;
 	}
