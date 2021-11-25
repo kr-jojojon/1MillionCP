@@ -162,10 +162,9 @@
 		height: 530px;
 		margin: 0 auto;
 	}
-
-	#video > iframe {
-		width: 100%;
-		height: 100%;
+	#video .youtube{
+		width: 600px;
+		height: 530px;
 	}
 	#game{
 		padding-top: 330px!important;
@@ -217,6 +216,10 @@
 	#video {
 		width: 340px;
 		height: 411px;
+	}
+	#video .youtube{
+		width: 340px;
+		height: 449px;
 	}
 	#game {
 		padding-top: 240px!important;
