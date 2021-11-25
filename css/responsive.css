@@ -5,6 +5,10 @@
 	.mobile{
 		display: none;
 	}
+	#video>div iframe{
+		width: 800px;
+		height: 449px;
+	}
 	#game-catch img{
 		padding-top: 50px;
 	}
